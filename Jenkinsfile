@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'jenkins-server'}
+  agent any
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
